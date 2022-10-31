@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles/novo_styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Formulário freeCodeCamp</h1>
+        <p id="description">Obrigado por separar um tempo para responder nossas perguntas!</p>
+    </header>
+    <main>
+        <form action="" id="formulario">
+            <div class="nome">
+                <label for="" id="label-nome">Nome
+                    <input type="text" name="" id="nome" required placeholder="Digite seu nome">
+                </label>
+            </div>
+            <div class="email">
+                <label for="" id="label-email">Email
+                    <input type="email" name="" id="email" required placeholder="Digite seu email">
+                </label>
+            </div>
+            <div class="idade">
+                <label for="" id="label-idade">Idade (opcional)
+                    <input type="number" name="" id="idade" min="13" max="120"  placeholder="Digite sua idade">
+                </label>
+            </div>
+            <div class="opcao">
+                <label for="dropdown">
+                    Que opção melhor te descreve?
+                    <select name="dropdown" id="dropdown">
+                        <option disabled selected id="placeholder">
+                            Selecione uma opção
+                        </option>
+                        <option value="1">
+                            Estou estudando em alguma instituição de ensino (Escola, Universidade, ...)
+                        </option>
+                        <option value="2">
+                            Estou estudando sozinho
+                        </option>
+                        <option value="3">
+                            Trabalho em tempo integral
+                        </option>
+                        <option value="4">
+                            Prefiro não dizer
+                        </option>
+                    </select>
+                </label>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
