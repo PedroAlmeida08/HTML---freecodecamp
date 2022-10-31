@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="styles/novo_styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
@@ -50,6 +50,93 @@
                         </option>
                     </select>
                 </label>
+            </div>
+            <div class="recomendacao">
+                <legend>Você recomendaria a freeCodeCamp para um amigo?</legend>
+                <label for="certeza">
+                    <input type="radio" name="recomendacao" id="certeza" value="certeza" checked>
+                    &nbsp Com certeza
+                </label>
+                <label for="talvez">
+                    <input type="radio" name="recomendacao" id="talvez" value="talvez">
+                    &nbsp Talvez
+                </label>
+                <label for="nao-sei">
+                    <input type="radio" name="recomendacao" id="nao-sei" value="nao-sei">
+                    &nbsp Não sei
+                </label>
+            </div>
+            <div class="preferencia">
+                <label for="preferencia">
+                    O que você mais gosta da freeCodeCamp?
+                    <select name="preferencia" id="preferencia">
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+                        <option value="1">
+                            Desafios
+                        </option>
+                        <option value="2">
+                            Projetos
+                        </option>
+                        <option value="3">
+                            Comunidade
+                        </option>
+                        <option value="4">
+                            Open Source
+                        </option>
+                    </select>
+                </label>
+            </div>
+            <div class="sugestoes">
+                <legend>Em que área acha que podemos melhorar?<br><span>(Marque quantas opções julgar necessárias)</span></legend>
+                <div class="colunas">
+                    <label for="full-stack">
+                        <input type="checkbox" name="full-stack" id="full-stack" value="full-stack">&nbsp Projetos Full-Stack
+                    </label>
+                    <label for="open-source">
+                        <input type="checkbox" name="open-source" id="open-source" value="open-source">&nbsp Comunidade Open Source
+                    </label>
+                    <label for="front-end">
+                        <input type="checkbox" name="front-end" id="front-end" value="front-end">&nbsp Projetos Front-End
+                    </label>
+                    <label for="gitter">
+                        <input type="checkbox" name="gitter" id="gitter" value="gitter">&nbsp Salas de Ajuda no Gitter
+                    </label>
+                    <label for="back-end">
+                        <input type="checkbox" name="back-end" id="back-end" value="back-end">&nbsp Projetos Back-End
+                    </label>
+                    <label for="meetups">
+                        <input type="checkbox" name="meetups" id="meetups" value="meetups">&nbsp Encontros Presenciais
+                    </label>
+                    <label for="data-vis">
+                        <input type="checkbox" name="data-vis" id="data-vis" value="data-vis">&nbsp Visualização de Dados
+                    </label>
+                    <label for="forum">
+                        <input type="checkbox" name="forum" id="forum" value="forum">&nbsp Fórum
+                    </label>
+                    <label for="challenges">
+                        <input type="checkbox" name="challenges" id="challenges" value="challenges">&nbsp Desafios
+                    </label>
+                    <label for="videos">
+                        <input type="checkbox" name="videos" id="videos" value="videos">&nbsp Vídeos
+                    </label>
+                    <label for="wiki">
+                        <input type="checkbox" name="wiki" id="wiki" value="wiki">&nbsp Wiki
+                    </label>
+                    <label for="courses">
+                        <input type="checkbox" name="courses" id="courses" value="courses">&nbsp Novos Cursos
+                    </label>
+                </div>
+            </div>
+            <div class="comentarios">
+                <legend>Algum comentário ou sugestão?</legend>
+                <label for="comments" id="comments">
+                    <textarea name="comments" id="comments" cols="30" rows="5" placeholder="Digite aqui ..."></textarea>
+                </label>
+            </div>
+            <div class="botao">
+                <input type="submit" id="submit" value="Enviar">
             </div>
         </form>
     </main>
